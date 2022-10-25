@@ -1,0 +1,65 @@
+/* Login-css */
+.Login_container{
+    width: 100vw;
+    height: auto;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    padding-top: 150px;
+    background-color: rgba(211, 211, 211, 0.205);
+  
+    
+  }
+  .login_img{
+    height: 500px;
+    width: 550px;
+    margin-top: -35px;
+    margin-left: -50px;
+  }
+  .login_heading{
+    padding-top: 1.5rem;
+    padding-left: 8px;
+   font-size: 35px;
+    font-family: Roboto;
+    text-align: left;
+  }
+  .login_underline{
+    background-color: black;
+    height: 1.5px;
+    width: 75px;
+   margin-left: 50px;
+    margin-right: auto;
+  }
+  .input_container{
+    border: solid gray 1px;
+    width: 370px;
+    height: 350px;
+    text-align: center;
+    margin-top: -15px;
+    margin-left: 50px;
+  
+  }
+  .input_email{
+    width: 350px;
+    height: 2.5rem;
+    margin-top: 2.5rem;
+    
+    
+  }
+  .input_password{
+    width: 350px;
+    height: 2.5rem;
+    margin-top: 2.0rem;
+  }
+  .login_btn{
+    width: 350px;
+    height: 2.5rem;
+    margin-top: 2.5rem;
+    margin-bottom: 1.5rem;
+    font-size: 25px;
+    font-family: Roboto;
+    text-align: center;
+    border:solid 1px;
+    background-color: lightgrey;
+    
+  }
