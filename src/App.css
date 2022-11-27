@@ -10,7 +10,7 @@
    .home-heading{
     width: auto;
   margin-left: 10px;
-  margin-top: 120px;
+  margin-top: 160px;
   font-family: 'Roboto Slab';
   font-style: normal;
   font-weight: 700;
@@ -24,7 +24,7 @@
   font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 25px;
   }
   .home-btn-div{
@@ -67,8 +67,10 @@
       margin-right: 100px;
       margin-top: -100px;
   }
-  .vector1_img{
-  /* height: 580.5px; */
+  .Home_img{
+    width: 97%;
+  }
+  /* .vector1_img{
   height: 80vh;
   width: 401.5px;
   border-radius: 0px;
@@ -86,7 +88,7 @@
   top: 83px;
   border-radius: 0px;
   
-  }
+  } */
   
   
   /* Home-Page-Part-2-Css */
@@ -136,32 +138,31 @@
   .social_container {
     margin-top: 0;
     height: auto;
-    }
+    
+}
     a.social {
-    margin: 1.2rem;
-  transition: transform 250ms;
-  display: inline-block;
+      margin: 1rem;
+      transition: transform 250ms;
+      display: inline-block;
     }
     a.social:hover {
       transform: translateY(-2px);
     }
-    a.youtube {
-      color: white;
-    }
-    .facebook-social {
-      margin-top: -24px;
-      transform: translateY(-2px);
-      border-radius: 0px;
-      color: white;
-    }
-    .facebook-social:hover{
-      transform: translateY(-3.5px);
-    }
-    a.twitter {
-      color: white;
-    }
+    a.facebook {
+      color: lightgray;
+     }
     a.instagram {
-      color: white;
+      color: lightgray;
+    }
+    a.whatsapp{
+      color: lightgray;
+    }
+  a.linkedin{
+    color: lightgray;
+  }
+    .text{
+      text-align: justify;
+      padding: 5px;
     }
   /* Home-Page-Part-3-Css */
   .sub_container_Imgg{
@@ -197,7 +198,7 @@
   vertical-align: middle;
   margin-left: auto;
   margin-right: auto;
-  width: 450px;
+  width: 500px;
   height: 62px;
   font-size: 20px;
   font-family: 'Inter';
@@ -243,8 +244,8 @@
     
   }
   .mobile2{
-  height: 650px;
-  width: 336px;
+  height: 620px;
+  width: 295px;
   border-radius: 0px;
   margin-bottom: 3.5rem;
   
@@ -296,7 +297,7 @@
   
 /* Contact-us-Css */
 .contactus_container{
-  width: 100vw;
+width: 100vw;
   height: auto;
   margin-top: 3rem;
   margin-bottom: 10rem;
@@ -305,14 +306,13 @@ z-index: 1000;
 }
 .contactus_heading{
   height: 60px;
-  width: 259px;
+  width: auto;
   font-family: Roboto Slab;
   font-size: 46px;
   font-weight: 700;
   line-height: 61px;
   letter-spacing: 0em;
-  margin-left: auto;
-  margin-right: auto;
+text-align: center;
 
 }
 .contactus_subheading{
@@ -335,7 +335,7 @@ border-radius: 8px;
 }
 .input_lables{
 height: 23px;
-width: 94px;
+width: auto;
 margin-bottom: 5px;
 font-family: Inter;
 font-size: 19px;
@@ -679,27 +679,38 @@ padding-top: 0px;
 }
 /* Footer-css */
 .icons_container {
-  padding-top:7px;
+ padding-top:7px;
 }
-.active.facebook {
-   background-color: white;
-   color: aliceblue;
- }
- .facebook{
-   color: white;
-  padding: 10px;
+.footer_facebook{
+  padding-left: 12px;
+  color: white;
+font-size: 20px;
+}
+.footer_facebook:hover{
+color: lightgray;
+}
+.footer_instagram{
+  padding-left: 15px;
+  color: white;
   font-size: 20px;
- }
- .facebook:hover{
+}
+.footer_instagram:hover{
+  color: lightgray;
   }
-.twitterr {
-color: white;
-padding: 10px;
-font-size: 20px;
+.footer_linkedin{
+  padding-left: 15px;
+  color: white;
+  font-size: 20px;
 }
-.iinstagram {
-color: white;
-padding: 10px;
-font-size: 20px;
+.footer_linkedin:hover{
+  color: lightgray;
+  }
+.footer_whatsapp{
+  padding-left: 15px;
+  color: white;
+  font-size: 20px;
 }
+.footer_whatsapp:hover{
+  color: lightgray;
+  }
 

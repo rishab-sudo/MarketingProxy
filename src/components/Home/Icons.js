@@ -1,6 +1,6 @@
 import React from 'react'
 import facebook from "../../assests/facebook.png"
-import { faYoutube, faFacebook, faTwitter, faInstagram, faWhatsapp, } from "@fortawesome/free-brands-svg-icons";
+import {  faSquareFacebook, faSquareInstagram, faSquareWhatsapp, faLinkedin, } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Icons = () => {
@@ -8,24 +8,24 @@ const Icons = () => {
 
 <div className='social_container'>
 
-
- <a href="https://about.facebook.com/"
-   className="facebook-social">
-   <img  className="facebook-social" src={facebook} style={{height:"43px",paddingRight:"1.31rem"}}/>
+ <a href="https://www.facebook.com/profile.php?id=100084463219381&mibextid=LQQJ4d" className="facebook social">
+    <FontAwesomeIcon icon={faSquareFacebook} size="3x" />
  </a>
 
-  <a href="https://www.instagram.com/?hl=en"
+ <a href="https://wa.me/message/YVV3N7ZVZMAJH1"
+   className="whatsapp social">
+   <FontAwesomeIcon icon={faSquareWhatsapp} size="3x" />
+ </a>
+
+  <a href="https://instagram.com/timely_proxy?igshid=MWI4MTIyMDE="
      className="instagram social">
-     <FontAwesomeIcon icon={faInstagram} size="3x" />
+     <FontAwesomeIcon icon={faSquareInstagram} size="3x" />
   </a>
 
- <a href="https://twitter.com/i/flow/login" className="twitter social">
-    <FontAwesomeIcon icon={faTwitter} size="3x" />
- </a>
 
- <a href="https://www.youtube.com"
-    className="youtube social">
-    <FontAwesomeIcon icon={faYoutube} size="3x" />
+ <a href="https://www.linkedin.com/company/timelyproxy/"
+    className="linkedin social">
+    <FontAwesomeIcon icon={faLinkedin} size="3x" />
   </a>
 
          

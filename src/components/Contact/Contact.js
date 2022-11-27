@@ -1,62 +1,95 @@
 import React, { useState } from 'react'
-import { db } from "../../firebaseConfig"
-import { addDoc, collection } from "firebase/firestore"
 import { FaEnvelope } from "react-icons/fa";
 import { FaPhoneAlt } from "react-icons/fa";
 import { FaClock } from "react-icons/fa";
+// import { db } from "../../firebaseConfig"
+// import { addDoc, collection } from "firebase/firestore"
 
 
 const Contact = () => {
-  const [email, setEmail] = useState();
-  const [password, setPassword] = useState();
-  const [message, setMessage] = useState();
+  
+  // const [email, setEmail] = useState();
+  // const [password, setPassword] = useState();
+  // const [message, setMessage] = useState();
 
-  const userCollectionRef = collection(db, "contactdata")
-  const handleSubmit = () => {
-    addDoc(userCollectionRef, {
-      email: email,
-      password: password,
-      message: message
-    }).then(() => {
-      if (!alert("Form Submitted Successfully !!!")) document.location = ""
-    }).catch((error) => {
-      alert(error.message)
+  // const userCollectionRef = collection(db, "contactdata")
+  // const handleSubmit = () => {
+  //   addDoc(userCollectionRef, {
+  //     email: email,
+  //     password: password,
+  //     message: message
+  //   }).then(() => {
+  //     if (!alert("Form Submitted Successfully !!!")) document.location = ""
+  //   }).catch((error) => {
+  //     alert(error.message)
+  //   })
+  // }
+
+
+  const [details, setDetails] = useState({
+    fName: '',
+    lName: '',
+    email: '',
+   
+})
+
+const PostData =async(e)=>{
+    e.preventDefault()
+
+    const{fName,lName,email}=details;
+
+   const res=await fetch("https://proxyycontact-db-f4803-default-rtdb.firebaseio.com/contactform.json",
+   {
+       method:'POST',
+       headers:{
+           'Content-Type':'application/json'
+       },
+       body:JSON.stringify({
+        fName,
+        lName,
+        email,
+       
+       })
     })
-  }
 
-
+}
 
 
 
 
   return (
     <div id="Contact" className='contactus_container'>
-      <p className='contactus_heading'>Contact Us</p>
+      <p className='contactus_heading'>Get a free Demo</p>
       <div className='underline'></div>
       <p className='contactus_subheading'>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. At pharetra, molestie elit nunc vivamus quam.
+      Proxyy would like to give you the opportunity to learn more about how it can take efficiency and profitability to totally new levels in your organisation.
+
       </p>
 
       <div class="container">
         <div class="row justify-content-center" style={{ marginLeft: "auto" }}>
           <div class="col" >
             <div className='contact_form'>
-              <label className='input_lables'>Email</label >
-              <input className="input_fields" type="email" placeholder='Email' onChange={(event) => {
-                setEmail(event.target.value)
-              }} />
+              
+              <label className='input_lables'>Name</label >
+              <input className="input_fields" type="text" placeholder='Name' onChange={(e)=>
+            setDetails({...details,fName:e.target.value})} />
 
-              <label className='input_lables'>Password</label >
-              <input className="input_fields" type="password" placeholder='Password' onChange={(event) => {
-                setPassword(event.target.value)
-              }} />
-              <label className='input_lables' >Message</label >
-              <textarea style={{ height: "100px", lineHeight: "22px", }} className="input_fields" type="text" placeholder='Message' onChange={(event) => {
-                setMessage(event.target.value)
-              }}></textarea>
+              <label className='input_lables'>Email</label >
+              <input className="input_fields" type="password" placeholder='Email' onChange={(e)=>
+            setDetails({...details,lName:e.target.value})}  />
+              
+              <label className='input_lables' >Mob.No</label >
+              <input  className="input_fields" type="text" placeholder='Mob.No' onChange={(e)=>
+            setDetails({...details,email:e.target.value})} />
+
+             <label className='input_lables' >College Name</label >
+              <input  className="input_fields" type="text" placeholder='College Name' onChange={(e)=>
+            setDetails({...details,email:e.target.value})} />
+            
 
             </div>
-            <button onClick={handleSubmit} className="submit_btn">Submit</button>
+            <button onClick={PostData} className="submit_btn">Submit</button>
           </div>
 
           <div class="col">
@@ -66,12 +99,12 @@ const Contact = () => {
                 <div id="underline"></div>
                 <div id="contact_card_text">
                   <a href="mailto:" style={{ color: "white" }}>
-                    <p id="card-text"> <FaEnvelope id="mailicon" />admin@gmail.com</p>
+                    <p id="card-text"> <FaEnvelope id="mailicon" /> proxy.pvt01@gmail.com </p>
                   </a>
                   <a href="tel:+6494461709" style={{ color: "white" }}>
-                    <p id="card-text"><FaPhoneAlt id="phonicon" style={{ color: "white" }} />9876543210</p>
+                    <p id="card-text"><FaPhoneAlt id="phonicon" style={{ color: "white" }} />+91-8171330405</p>
                   </a>
-                  <p id="card-text"><FaClock id="clockicon" />09:00am-15:00pm</p>
+                  <p id="card-text"><FaClock id="clockicon" />24x7</p>
                 </div>
               </div>
             </div>

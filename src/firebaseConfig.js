@@ -1,16 +1,17 @@
 import { initializeApp } from "firebase/app";
-import { getFirestore } from "firebase/firestore";
+import { getAnalytics } from "firebase/analytics";
 const firebaseConfig = {
-  apiKey: "AIzaSyAIdAou8UeGo6ZMnd-MckJEBq56fnisN2A",
-  authDomain: "proxycontact-c69d0.firebaseapp.com",
-  databaseURL: "https://proxycontact-c69d0-default-rtdb.firebaseio.com",
-  projectId: "proxycontact-c69d0",
-  storageBucket: "proxycontact-c69d0.appspot.com",
-  messagingSenderId: "695343825712",
-  appId: "1:695343825712:web:6f13095fdcbcb4d6343ef5"
+  apiKey: "AIzaSyA0WCKjODncdJdrVDFZl4xD-_WqlEu5118",
+  authDomain: "proxyycontact-db-f4803.firebaseapp.com",
+  databaseURL: "https://proxyycontact-db-f4803-default-rtdb.firebaseio.com",
+  projectId: "proxyycontact-db-f4803",
+  storageBucket: "proxyycontact-db-f4803.appspot.com",
+  messagingSenderId: "562166611144",
+  appId: "1:562166611144:web:750bb9ca1f5ae7a82cb9fd",
+  measurementId: "G-PB9YQP77WG"
 };
 
 // Initialize Firebase
 export const app = initializeApp(firebaseConfig);
 
-export const db = getFirestore(app);
+const analytics = getAnalytics(app);

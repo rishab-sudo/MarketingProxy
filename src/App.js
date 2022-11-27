@@ -17,13 +17,13 @@ import Slider from "../src/Slider/Slider"
 function App() {
   return (
     <>
-    <h1>hello</h1>
+   
     <Navbar/>
     <Home/>
     <About/>
     <Contact/>
     <FAQ/>
-    {/* <Login/>  */}
+   
     <Footer/>
 
 
@@ -35,7 +35,7 @@ function App() {
       <Route path="/FAQ" element={<FAQ />} />
       <Route path="/Login" element={<Login />} />
       </Routes>
-    </BrowserRouter> */}
+    </BrowserRouter>  */}
     </>
   );
 }

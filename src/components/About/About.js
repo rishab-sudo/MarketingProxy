@@ -22,28 +22,34 @@ const About = () => {
     <p className='Aboutus_heading'>About Us</p>
     <div className='Aboutus_underline'></div>
    <p className='Aboutus_subHeading'>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-   Cursus nec ut sed neque duis rhoncus, et, scelerisque urna. Arcu velit quam facilisi habitant interdum velit purus ac. 
-   Ipsum at venenatis massa tortor, viverra netus sed. Nunc ipsum nunc id gravida urna libero. Elit netus sit risus, lacinia. Placerat donec amet blandit in orci. 
-   Tincidunt tincidunt donec consequat erat commodo.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus nec ut sed neque duis rhoncus, et, scelerisque urna. 
-   Arcu velit quam facilisi habitant interdum velit purus ac. Ipsum at venenatis massa tortor, viverra netus sed. Nunc ipsum nunc id gravida urna libero. Elit netus sit risus, lacinia.
-    Placerat donec amet blandit in orci. 
-   Tincidunt tincidunt donec consequat erat commodo.
-   </p>
+   Proxyy is an Indian digital attendance marking 
+   Application headquartered in Gurgaon, 
+   Haryana India. <br/>Proxyy was founded in December
+    2019, The Proxyy app is available for both 
+    platform Android and IOS .<br/> Using   Proxyy, 
+    Students can mark their attendance and keep a 
+    record monthly and semester wise.<br/> Proxyy also 
+    allows students to get the details of ongoing 
+    and upcoming events. <br/>
+    Proxyy is accepted as a Digital attendance marking system. 
+    The app is served in different colleges .
+     </p>
     </div>
   </div>
   </div>
 {/* testimonial-page */}
    
-   <div className='testimonial_main_container'>
+   {/* <div className='testimonial_main_container'>
     
     <div className='test_heading_para'>
      <p className='testi_heading'>Testimonial</p>
      <div className='underline' style={{marginTop:"60px"}}></div>
-     <p className='testi_sub_heading'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-At pharetra, molestie elit nunc vivamus quam. </p>
+     <p className='testi_sub_heading'>  
+      Proxyy is accepted as a Digital attendance marking system. 
+     The app is served in different colleges . 
+     </p>
 </div>
-</div>
+</div> */}
 {/* Daily-updates */}
 <div className="Daily_updates_container">
   <div class="row">
@@ -52,7 +58,8 @@ At pharetra, molestie elit nunc vivamus quam. </p>
     <div className='DailyUpdates_heading_para'>
 <p className='DailyUpdates_heading'>Daily Updates.<br/>No ads. No delays</p>
 <div className='underline' style={{float:"left",marginTop:"-20px",marginBottom:"10px"}}></div>
-<p className='DailyUpdates_subheading'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. At pharetra, molestie elit nunc vivamus quam. </p>
+<p className='DailyUpdates_subheading'> 
+Get daily updates of Attendance percentage, Documents, notes, events etc . </p>
 </div>
     </div>
    
@@ -65,7 +72,7 @@ At pharetra, molestie elit nunc vivamus quam. </p>
   </div>
    </div>
    {/*  */}
-  <div className='DownloadApp_container'>
+  {/* <div className='DownloadApp_container'>
     <div className='heading_para' style={{paddingTop:"1.5rem",paddingBottom:"2.5rem"}}>
 <p className='DownloadApp_heading'>Download App</p>
 <p className='DownloadApp_sub_heading'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus nec ut sed neque
@@ -85,12 +92,12 @@ At pharetra, molestie elit nunc vivamus quam. </p>
   <img className="btn_icon1"src={playStore} alt=""></img>
 </button>
 </div>
-  </div>
+  </div> */}
   {/*  */}
-  <div className='App_SS_container' style={{width:"100vw",height:"100vh",backgroundImage: `url(${AppSS})`}}>
+  {/* <div className='App_SS_container' style={{width:"100vw",height:"100vh",backgroundImage: `url(${AppSS})`}}>
 <p className='SS_heading' style={{paddingTop:'1.5rem'}}>App Screenshots</p>
 
-  </div>
+  </div> */}
    </>
    
   )

@@ -1,10 +1,11 @@
 .navbar{
-    background-color: #FFFFFF;
+    background-color: #022C44;
+ 
     height: 83px;
 }
 .navlogo{
-height: 70px;
-width: 70px;
+height: 100px;
+width: 130px;
 left: 129px;
 top: 11px;
 border-radius: 0px;
@@ -20,25 +21,26 @@ line-height: 19px;
 .nav-link{
     color: #FFFFFF;
     font-size: 16px;
-color: black;
 font-family: Inter;
 font-size: 16px;
 font-weight: 700;
 line-height: 19px;
 margin-left: 20px;
 }
-.nav-link:active{
-    color: #022C44;
-    
-}
 .nav-link:hover{
-    color: #022C44;
+    color: #FFFFFF;
 }
 .login-Btn{
-background-color:#022C44 ;
-color: #FFFFFF;
-font-size: 16px;
+    margin-right: -30px;
+   margin-left: 50px; 
+    outline: none;
+background-color:#FED700; ;
+font-weight: bold;
+color: black;
+font-size: 17px;
 height: 39px;
-width: 87px;
+width: 150px;
 }
-
+/* .login-Btn:hover{
+    background-color: #022C44;
+} */
