@@ -36,7 +36,7 @@ const Home = () => {
 
                 <div class="p-2 bd-highlight"><p className='home-sub-heading'>
                   No need to wait for you roll call.<br></br>
-                  Just tap and mark your attendance on your phone<br></br>
+                  Just tap and mark your attendance <br/> on your phone<br></br>
                 </p>
                 </div>
 
@@ -68,7 +68,7 @@ const Home = () => {
       </div>
       {/* Home-Page-Part-2 */}
       <div className="sub_container_Img" style={{ backgroundImage: `url(${HomeBgImg})`, textAlign: "center" }}>
-        <div className="container" style={{ background: "rgba(0, 0, 0, 0.6)", height: "87vh", minWidth: "100%", marginTop: "0vh", paddingTop: "25vh" }}>
+        <div className="container" style={{ background: "rgba(0, 0, 0, 0.8)", height: "87vh", minWidth: "100%", marginTop: "0vh", paddingTop: "25vh" }}>
           <p className='BgImg_heading'>Let's Get You Started</p>
           <div className='underline' style={{ textAlign: "" }}></div>
           <p className='BgImg_sub_heading'>
